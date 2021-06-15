@@ -1,0 +1,19 @@
+
+.rating {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+}
+.rating image {
+	width: 30rpx;
+	height: 30rpx;
+}
+.rating text {
+	margin-left: 10rpx;
+	font-weight: 700;
+	color: orange;
+}
+

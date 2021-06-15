@@ -1,0 +1,1 @@
+<view class="rating"><block wx:for="{{countStar}}" wx:for-item="item" wx:for-index="index" wx:key="index"><image src="../../static/icon/star.png" mode></image></block><block wx:for="{{5-countStar}}" wx:for-item="item" wx:for-index="indey"><image src="../../static/icon/star-gray.png" mode></image></block><block wx:if="{{showNum}}"><text>{{$root.g0}}</text></block></view>

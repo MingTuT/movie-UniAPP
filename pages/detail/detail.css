@@ -1,0 +1,102 @@
+#detail {
+	color: #FFFFFF;
+	background: linear-gradient(to bottom right, #e66465, #9198e5);
+	height: 100%;
+	background-size:100% 100%;
+}
+
+.movie-info {
+	display: flex;
+	padding-top: 50upx;
+}
+.info-lef {
+	margin-left: 50upx;
+}
+.info-lef image {
+	width: 200upx;
+	height: 270upx;
+	border-radius: 15upx;
+	box-shadow: 10upx 10upx 30upx #000;
+}
+.info-right {
+	margin-left: 60upx;
+}
+.info-right .movie-name {
+	font-size: 22px;
+	white-space: wrap;
+	margin-bottom: 25upx;
+}
+.type, .language, .language {
+	margin-bottom: 25upx;
+}
+
+.rating {
+	display: flex;
+	width: 90%;
+	margin: 50upx auto;
+	background-color: rgb(111,66,39);
+	border-radius: 20upx;
+	justify-content: space-around;
+}
+.rating .rating-text {
+	padding-top: 30upx;
+	font-size: 20px;
+}
+.rating .rating-num {
+	margin-left: -200upx;
+}
+.rating .rating-num view {
+	color: orange;
+	font-size: 20px;
+	font-weight: 700;
+	margin-top: 30upx;
+}
+
+.brief {
+	width: 90%;
+	margin: 80upx auto;
+}
+.brief .brief-title {
+	font-size: 20px;
+	font-weight: 700;
+	margin-bottom: 30upx;
+}
+
+.trailer {
+	display: flex;
+	flex-direction: column;
+}
+.trailer video {
+	width: 92%;
+	align-self: center;
+	border-radius: 20upx;
+}
+.trailer .trailer-title {
+	font-size: 20px;
+	font-weight: 700;
+	margin-left: 35upx;
+	margin-bottom: 30upx;
+}
+
+.related-pic-title {
+	font-size: 20px;
+	font-weight: 700;
+	margin-left: 35upx;
+	margin-bottom: 30upx;
+}
+
+.related-pic {
+	margin-top: 100upx;
+}
+.scroll-wrapper {
+	display: flex;
+	padding-bottom: 50upx;
+}
+.scroll-item {
+	margin: auto 5upx;
+}
+.scroll-item image {
+	width: 300upx;
+	height: 250upx;
+	border-radius: 15upx;
+}
