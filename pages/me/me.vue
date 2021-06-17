@@ -1,21 +1,21 @@
 <template>
 	<view>
 		<!-- 未登录 start -->
-		<view class="not-logged" v-if="false">
+		<view class="not-logged" v-if="!user">
 			<view class="logged-button">
-				登录
+				<navigator url="../login/login">登录</navigator>
 			</view>
 		</view>
 		<!-- 未登录 end -->
 		<!-- 已登录 start -->
-		<view class="logged">
+		<view class="logged" v-else>
 			<view class="user-info">
-				<image class="avatar" src="../../static/img/3.webp" mode="aspectFill"></image>
-				<view class="user-name">西红柿炒鸡蛋</view>
-				<image class="sex" src="../../static/icon/female.png" mode=""></image>
+				<image class="avatar" :src="user.avatar" mode="aspectFill"></image>
+				<view class="user-name">{{user.nickName}}</view>
+				<image class="sex" :src="user.sex?'../../static/icon/male.png':'../../static/icon/female.png'" mode=""></image>
 			</view>
 			<view class="user-signature">
-				个性签名 : 不爱吃土豆🥔
+				个性签名 : {{user.signature}}
 			</view>
 			<view class="settings">
 				<image src="../../static/icon/settings.png" mode=""></image>修改个人信息
@@ -32,8 +32,12 @@
 	export default {
 		data() {
 			return {
-				
+				user: null
 			}
+		},
+		created() {
+			// 从session中取登录的user
+			this.user = uni.getStorageSync('user')
 		},
 		methods: {
 			

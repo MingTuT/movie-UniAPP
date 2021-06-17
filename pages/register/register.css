@@ -40,7 +40,7 @@ page {
 	width: 70%;
 	height: 100upx;
 	border-bottom: 1px solid #e3e3e3;
-	 height: 100upx;
+
 	 /* height: 100upx;
 	border-bottom: 1px solid #e3e3e3; */
 }
@@ -50,6 +50,7 @@ page {
 	color: #ff0000;
 	margin-left: 100upx;
 	visibility: hidden;
+	
 }
 .reg-form button {
 	width: 50%;
@@ -57,3 +58,7 @@ page {
 	background: linear-gradient(to right, rgba(229, 80, 50, 1), rgba(225, 120, 67, 1));
 	margin-top: 50upx;
 }
+.visible {
+	visibility: visible;
+}
+

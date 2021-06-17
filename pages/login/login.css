@@ -6,3 +6,52 @@ page {
 	background: linear-gradient(to right, rgba(229, 80, 50, 1), rgba(225, 120, 67, 1));
 	height: 350upx;
 }
+
+.login-form {
+	width: 650upx;
+	height: 600upx;
+	background: #FFFFFF;
+	margin: -200upx auto 0;
+}
+.login-item {
+	display: flex;
+	position: relative;
+	width: 80%;
+	margin: 0upx auto;
+}
+.login-item image {
+	position: absolute;
+	left: 55upx;
+	top: 55upx;
+	width: 50upx;
+	height: 50upx;
+}
+.login-item input {
+	margin: 0upx auto;
+	padding-top: 30upx;
+	padding-left: 80upx;
+	width: 70%;
+	height: 100upx;
+	border-bottom: 1px solid #e3e3e3;
+}
+.register {
+	font-size: 13px;
+	color: red;
+	margin-top: 30upx;
+	margin-left: 400upx;
+}
+.login-err {
+	/* margin-top: 80upx;
+	margin-bottom: 20upx; */
+	width: 200upx;
+	margin: 60upx auto 30upx;
+	font-size: 14px;
+	color: red;
+	visibility: hidden;
+}
+.login-form button {
+
+	width: 50%;
+	color: #FFFFFF;
+	background: linear-gradient(to right, rgba(229, 80, 50, 1), rgba(225, 120, 67, 1));
+}

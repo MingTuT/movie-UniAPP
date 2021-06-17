@@ -2,19 +2,19 @@ page {
 	background: rgb(245,246,250);
 }
 .logged-button {
-	background: linear-gradient(to right, rgba(191, 1, 0, 1), rgba(202, 62, 18, 1));
-	color: #FFFFFF;
+	background: linear-gradient(to right, rgba(229, 80, 50, 1), rgba(225, 120, 67, 1));
 	position: absolute;
 	width: 300upx;
-	height: 100upx;
-	line-height: 100upx;
+	height: 80upx;
+	line-height: 80upx;
 	text-align: center;
 	font-weight: 700;
 	font-size: 20px;
-	border-radius: 35upx;
-	top: 350upx;
+	border-radius: 20upx;
+	top: 450upx;
 	left: 50%;
 	margin-left: -150upx;
+	color: #FFFFFF;
 }
 
 
