@@ -1,6 +1,8 @@
 {
-  "navigationBarTitleText": "",
+  "navigationBarTitleText": "搜索",
   "enablePullDownRefresh": false,
-  "navigationStyle": "custom",
-  "usingComponents": {}
+  "navigationBarBackgroundColor": "#007AFF",
+  "usingComponents": {
+    "trailler-stars": "/component/traillerStars/traillerStars"
+  }
 }

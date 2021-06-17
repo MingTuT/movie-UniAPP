@@ -1,0 +1,59 @@
+page {
+	background: rgb(245,246,250);
+}
+
+.bg {
+	background: linear-gradient(to right, rgba(229, 80, 50, 1), rgba(225, 120, 67, 1));
+	height: 350upx;
+}
+
+.reg-form {
+	width: 650upx;
+	height: 750upx;
+	background: #FFFFFF;
+	/* margin-top: -200upx; */
+	margin: -200upx auto 0;
+}
+/* .reg-form form {
+	width: 650upx;
+	height: 700upx;
+} */
+.reg-item {
+	display: flex;
+	position: relative;
+	width: 80%;
+	margin: 0upx auto;
+}
+.reg-item image {
+	position: absolute;
+	left: 55upx;
+	top: 55upx;
+	width: 50upx;
+	height: 50upx;
+	/* width: 50upx;
+	height: 50upx; */
+}
+.reg-form input {
+	margin: 0upx auto;
+	padding-top: 30upx;
+	padding-left: 80upx;
+	width: 70%;
+	height: 100upx;
+	border-bottom: 1px solid #e3e3e3;
+	 height: 100upx;
+	 /* height: 100upx;
+	border-bottom: 1px solid #e3e3e3; */
+}
+.email-err,.pwd-err,.pwds-err {
+	font-size: 14px;
+	height: 20upx;
+	color: #ff0000;
+	margin-left: 100upx;
+	visibility: hidden;
+}
+.reg-form button {
+	width: 50%;
+	color: #FFFFFF;
+	background: linear-gradient(to right, rgba(229, 80, 50, 1), rgba(225, 120, 67, 1));
+	margin-top: 50upx;
+}

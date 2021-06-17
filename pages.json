@@ -11,9 +11,13 @@
             "path" : "pages/search/search",
             "style" :                                                                                    
             {
-                "navigationBarTitleText": "",
+                "navigationBarTitleText": "搜索",
                 "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor":"#007AFF"
+				// #ifdef H5
+				,
 				"navigationStyle": "custom"
+				// #endif
             }
             
         }
@@ -21,7 +25,7 @@
             "path" : "pages/me/me",
             "style" :                                                                                    
             {
-                "navigationBarTitleText": "",
+                "navigationBarTitleText": "个人中心",
                 "enablePullDownRefresh": false,
 				"navigationStyle": "custom"
             }
@@ -31,7 +35,6 @@
             "path" : "component/traillerStars/traillerStars",
             "style" :                                                                                    
             {
-                "navigationBarTitleText": "",
                 "enablePullDownRefresh": false
 				
             }
@@ -41,10 +44,32 @@
             "path" : "pages/detail/detail",
             "style" :                                                                                    
             {
-                "navigationBarTitleText": "",
+                "navigationBarTitleText": "详情页",
                 "enablePullDownRefresh": false,
 				"navigationBarTextStyle": "black",
 				"navigationBarBackgroundColor": "#FFFFFF"
+            }
+            
+        }
+        ,{
+            "path" : "pages/register/register",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "注册",
+                "enablePullDownRefresh": false,
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#FFFFFF"
+            }
+            
+        }
+        ,{
+            "path" : "pages/login/login",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "登录",
+                "enablePullDownRefresh": false,
+                "navigationBarTextStyle": "black",
+                "navigationBarBackgroundColor": "#FFFFFF"
             }
             
         }

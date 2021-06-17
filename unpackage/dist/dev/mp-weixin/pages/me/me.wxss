@@ -1,0 +1,106 @@
+page {
+	background: rgb(245,246,250);
+}
+.logged-button {
+	background: -webkit-linear-gradient(left, rgba(191, 1, 0, 1), rgba(202, 62, 18, 1));
+	background: linear-gradient(to right, rgba(191, 1, 0, 1), rgba(202, 62, 18, 1));
+	color: #FFFFFF;
+	position: absolute;
+	width: 300rpx;
+	height: 100rpx;
+	line-height: 100rpx;
+	text-align: center;
+	font-weight: 700;
+	font-size: 20px;
+	border-radius: 35rpx;
+	top: 350rpx;
+	left: 50%;
+	margin-left: -150rpx;
+}
+.logged {
+	position: relative;
+}
+.user-info {
+	position: absolute;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	background-color: #FFFFFF;
+	width: 650rpx;
+	height: 320rpx;
+	top: 130rpx;
+	left:50%;
+	-webkit-transform:translate(-50%);
+	        transform:translate(-50%);
+	border-radius: 30rpx;
+}
+.user-info .user-name {
+	width: 300rpx;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	font-size: 22px;
+	margin-left: 50rpx;
+}
+.user-info .avatar {
+	width: 150rpx;
+	height: 150rpx;
+	border-radius: 25rpx;
+	margin-left: 50rpx;
+}
+.user-info .sex {
+	width: 40rpx;
+	height: 40rpx;
+}
+.user-signature {
+	position: absolute;
+	top: 390rpx;
+	left: 125rpx;
+	width: 500rpx;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.settings {
+	/* font-size: 16px; */
+	position: absolute;
+	top: 500rpx;
+	width: 610rpx;
+	height: 70rpx;
+	line-height: 70rpx;
+	background-color: #FFFFFF;
+	left:50%;
+	-webkit-transform:translate(-50%);
+	        transform:translate(-50%);
+	border-radius: 15rpx;
+	padding-left: 40rpx;
+}
+.settings image {
+	top: 12rpx;
+	width: 40rpx;
+	height: 40rpx;
+	margin-right: 20rpx;
+}
+.log-out {
+	position: absolute;
+	top: 620rpx;
+	width: 610rpx;
+	height: 70rpx;
+	line-height: 70rpx;
+	background-color: #FFFFFF;
+	left:50%;
+	-webkit-transform:translate(-50%);
+	        transform:translate(-50%);
+	border-radius: 15rpx;
+	padding-left: 40rpx;
+}
+.log-out image {
+	top: 12rpx;
+	width: 40rpx;
+	height: 40rpx;
+	margin-right: 20rpx;
+}
+

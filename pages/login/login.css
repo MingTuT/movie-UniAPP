@@ -1,0 +1,8 @@
+page {
+	background: rgb(245,246,250);
+}
+
+.bg {
+	background: linear-gradient(to right, rgba(229, 80, 50, 1), rgba(225, 120, 67, 1));
+	height: 350upx;
+}

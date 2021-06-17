@@ -182,7 +182,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 38:
+/***/ 42:
 /*!************************************************************************************!*\
   !*** E:/WEB/movieUni/main.js?{"page":"component%2FtraillerStars%2FtraillerStars"} ***!
   \************************************************************************************/
@@ -198,5 +198,5 @@ createPage(_traillerStars.default);
 
 /***/ })
 
-},[[38,"common/runtime","common/vendor"]]]);
+},[[42,"common/runtime","common/vendor"]]]);
 //# sourceMappingURL=../../../.sourcemap/mp-weixin/component/traillerStars/traillerStars.js.map
