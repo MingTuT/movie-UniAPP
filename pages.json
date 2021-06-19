@@ -73,6 +73,17 @@
             }
             
         }
+        ,{
+            "path" : "pages/setting/setting",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "编辑资料",
+                "enablePullDownRefresh": false,
+                "navigationBarTextStyle": "black",
+                "navigationBarBackgroundColor": "#FFFFFF"
+            }
+            
+        }
     ],
 	"globalStyle": {
 		// "navigationBarTextStyle": "black",

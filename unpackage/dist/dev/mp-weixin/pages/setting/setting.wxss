@@ -1,0 +1,50 @@
+.setting-form {
+	width: 90%;
+	margin: 0 auto;
+}
+.avatar {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	padding-top: 50rpx;
+	margin-bottom: 100rpx;
+}
+.avatar image {
+	width: 150rpx;
+	height: 150rpx;
+	border-radius: 50%;
+	margin-bottom: 20rpx;
+}
+.info-wrapper {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	font-size: 18px;
+	padding: 20rpx 0;
+	border-bottom: 1px solid #CCCCCC;
+	margin-bottom: 80rpx;
+}
+.info-wrapper .text {
+	width: 150rpx;
+	margin-right: 50rpx;
+}
+.info-wrapper input {
+	font-size: 18px;
+}
+.info-wrapper picker {
+	font-size: 18px;
+}
+.setting-form button {
+	width: 40%;
+	background: -webkit-linear-gradient(left, rgba(229, 80, 50, 1), rgba(225, 120, 67, 1));
+	background: linear-gradient(to right, rgba(229, 80, 50, 1), rgba(225, 120, 67, 1));
+	color: #FFFFFF;
+}
+

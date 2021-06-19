@@ -17,10 +17,10 @@
 			<view class="user-signature">
 				个性签名 : {{user.signature}}
 			</view>
-			<view class="settings">
-				<image src="../../static/icon/settings.png" mode=""></image>修改个人信息
+			<view class="settings" @click="setting">
+				<image src="../../static/icon/settings.png" mode=""></image>修改资料
 			</view>
-			<view class="log-out">
+			<view class="log-out" @click="logOut">
 				<image src="../../static/icon/out.png" mode=""></image>退出登录
 			</view>
 		</view>
@@ -39,8 +39,21 @@
 			// 从session中取登录的user
 			this.user = uni.getStorageSync('user')
 		},
+		onShow() {
+			this.user = uni.getStorageSync('user')
+		},
 		methods: {
-			
+			logOut() {
+				uni.removeStorageSync('user')
+				uni.switchTab({
+				    url: '/pages/index/index'
+				});
+			},
+			setting() {
+				uni.navigateTo({
+				    url: '/pages/setting/setting'
+				});
+			}
 		}
 	}
 </script>

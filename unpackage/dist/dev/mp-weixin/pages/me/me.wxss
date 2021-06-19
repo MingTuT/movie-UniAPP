@@ -2,20 +2,20 @@ page {
 	background: rgb(245,246,250);
 }
 .logged-button {
-	background: -webkit-linear-gradient(left, rgba(191, 1, 0, 1), rgba(202, 62, 18, 1));
-	background: linear-gradient(to right, rgba(191, 1, 0, 1), rgba(202, 62, 18, 1));
-	color: #FFFFFF;
+	background: -webkit-linear-gradient(left, rgba(229, 80, 50, 1), rgba(225, 120, 67, 1));
+	background: linear-gradient(to right, rgba(229, 80, 50, 1), rgba(225, 120, 67, 1));
 	position: absolute;
 	width: 300rpx;
-	height: 100rpx;
-	line-height: 100rpx;
+	height: 80rpx;
+	line-height: 80rpx;
 	text-align: center;
 	font-weight: 700;
 	font-size: 20px;
-	border-radius: 35rpx;
-	top: 350rpx;
+	border-radius: 20rpx;
+	top: 450rpx;
 	left: 50%;
 	margin-left: -150rpx;
+	color: #FFFFFF;
 }
 .logged {
 	position: relative;
@@ -30,8 +30,8 @@ page {
 	        align-items: center;
 	background-color: #FFFFFF;
 	width: 650rpx;
-	height: 320rpx;
-	top: 130rpx;
+	height: 360rpx;
+	top: 115rpx;
 	left:50%;
 	-webkit-transform:translate(-50%);
 	        transform:translate(-50%);
@@ -48,7 +48,8 @@ page {
 .user-info .avatar {
 	width: 150rpx;
 	height: 150rpx;
-	border-radius: 25rpx;
+	/* border-radius: 25upx; */
+	border-radius: 50%;
 	margin-left: 50rpx;
 }
 .user-info .sex {

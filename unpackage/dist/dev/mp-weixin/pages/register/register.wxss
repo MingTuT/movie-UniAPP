@@ -1,0 +1,66 @@
+page {
+	background: rgb(245,246,250);
+}
+.bg {
+	background: -webkit-linear-gradient(left, rgba(229, 80, 50, 1), rgba(225, 120, 67, 1));
+	background: linear-gradient(to right, rgba(229, 80, 50, 1), rgba(225, 120, 67, 1));
+	height: 350rpx;
+}
+.reg-form {
+	width: 650rpx;
+	height: 750rpx;
+	background: #FFFFFF;
+	/* margin-top: -200upx; */
+	margin: -200rpx auto 0;
+}
+
+/* .reg-form form {
+	width: 650upx;
+	height: 700upx;
+} */
+.reg-item {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	position: relative;
+	width: 80%;
+	margin: 0rpx auto;
+}
+.reg-item image {
+	position: absolute;
+	left: 55rpx;
+	top: 55rpx;
+	width: 50rpx;
+	height: 50rpx;
+	/* width: 50upx;
+	height: 50upx; */
+}
+.reg-form input {
+	margin: 0rpx auto;
+	padding-top: 30rpx;
+	padding-left: 80rpx;
+	width: 70%;
+	height: 100rpx;
+	border-bottom: 1px solid #e3e3e3;
+
+	 /* height: 100upx;
+	border-bottom: 1px solid #e3e3e3; */
+}
+.email-err,.pwd-err,.pwds-err {
+	font-size: 14px;
+	height: 20rpx;
+	color: #ff0000;
+	margin-left: 100rpx;
+	visibility: hidden;
+}
+.reg-form button {
+	width: 50%;
+	color: #FFFFFF;
+	background: -webkit-linear-gradient(left, rgba(229, 80, 50, 1), rgba(225, 120, 67, 1));
+	background: linear-gradient(to right, rgba(229, 80, 50, 1), rgba(225, 120, 67, 1));
+	margin-top: 50rpx;
+}
+.visible {
+	visibility: visible;
+}
+

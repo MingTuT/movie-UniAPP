@@ -1,0 +1,60 @@
+page {
+	background: rgb(245,246,250);
+}
+.bg {
+	background: -webkit-linear-gradient(left, rgba(229, 80, 50, 1), rgba(225, 120, 67, 1));
+	background: linear-gradient(to right, rgba(229, 80, 50, 1), rgba(225, 120, 67, 1));
+	height: 350rpx;
+}
+.login-form {
+	width: 650rpx;
+	height: 600rpx;
+	background: #FFFFFF;
+	margin: -200rpx auto 0;
+}
+.login-item {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	position: relative;
+	width: 80%;
+	margin: 0rpx auto;
+}
+.login-item image {
+	position: absolute;
+	left: 55rpx;
+	top: 55rpx;
+	width: 50rpx;
+	height: 50rpx;
+}
+.login-item input {
+	margin: 0rpx auto;
+	padding-top: 30rpx;
+	padding-left: 80rpx;
+	width: 70%;
+	height: 100rpx;
+	border-bottom: 1px solid #e3e3e3;
+}
+.register {
+	font-size: 13px;
+	color: red;
+	margin-top: 30rpx;
+	margin-left: 400rpx;
+}
+.login-err {
+	/* margin-top: 80upx;
+	margin-bottom: 20upx; */
+	width: 200rpx;
+	margin: 60rpx auto 30rpx;
+	font-size: 14px;
+	color: red;
+	visibility: hidden;
+}
+.login-form button {
+
+	width: 50%;
+	color: #FFFFFF;
+	background: -webkit-linear-gradient(left, rgba(229, 80, 50, 1), rgba(225, 120, 67, 1));
+	background: linear-gradient(to right, rgba(229, 80, 50, 1), rgba(225, 120, 67, 1));
+}
+

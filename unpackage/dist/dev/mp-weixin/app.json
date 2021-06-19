@@ -4,7 +4,10 @@
     "pages/search/search",
     "pages/me/me",
     "component/traillerStars/traillerStars",
-    "pages/detail/detail"
+    "pages/detail/detail",
+    "pages/register/register",
+    "pages/login/login",
+    "pages/setting/setting"
   ],
   "subPackages": [],
   "window": {},

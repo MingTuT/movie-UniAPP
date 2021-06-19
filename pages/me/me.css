@@ -45,7 +45,8 @@ page {
 .user-info .avatar {
 	width: 150upx;
 	height: 150upx;
-	border-radius: 25upx;
+	/* border-radius: 25upx; */
+	border-radius: 50%;
 	margin-left: 50upx;
 }
 .user-info .sex {
