@@ -29,7 +29,7 @@
 			<view class="rating-num">
 				<view>{{movie.score}} 分</view>
 				<trailler-stars v-if="movie.score" :showNum=0 :score="movie.score" />
-			</view>	
+			</view>
 		</view>
 		<!-- 电影评分 end -->
 		<!-- 简介 start -->
@@ -42,22 +42,21 @@
 		<!-- 简介 end -->
 		<!-- 预告 start -->
 		<view class="trailer">
-			<view class="trailer-title">预告</view>			
-				<!-- <video :src="movie.trailer[0]" 
-				:poster="movie.trailer[1]" controls></video> -->	
-				
-					<video v-if="movie.trailer" :src="movie.trailer[0]"
-					:poster="movie.trailer[1]" controls></video>
-				
+			<view class="trailer-title">预告</view>
+			<!-- <video :src="movie.trailer[0]" 
+				:poster="movie.trailer[1]" controls></video> -->
+
+			<video v-if="movie.trailer" :src="movie.trailer[0]" :poster="movie.trailer[1]" controls></video>
+
 		</view>
 		<!-- 预告 end -->
 		<!-- 剧照 start -->
 		<view class="related-pic">
-			<view class="related-pic-title">剧照</view>	
-			<scroll-view scroll-x="true" >
+			<view class="related-pic-title">剧照</view>
+			<scroll-view scroll-x="true">
 				<view class="scroll-wrapper">
 					<view v-for="(item,index) in movie.relatedPic" :key="item._id" class="scroll-item">
-						<image :src="item" mode="heightFix"></image>
+						<image :src="item" mode="heightFix" @click="preImg(index)"></image>
 					</view>
 				</view>
 			</scroll-view>
@@ -68,7 +67,7 @@
 
 <script>
 	import traillerStars from '../../component/traillerStars/traillerStars.vue'
-	
+
 	export default {
 		data() {
 			return {
@@ -77,7 +76,7 @@
 			}
 		},
 		components: {
-			traillerStars	// 打星星组件
+			traillerStars // 打星星组件
 		},
 		onLoad(option) {
 			this.movieId = option.id
@@ -85,7 +84,7 @@
 			// console.log(this.movieId)
 		},
 		created() {
-			
+
 		},
 		methods: {
 			// 获取电影详情信息
@@ -95,11 +94,22 @@
 					success: (res) => {
 						res.data.movie.score = res.data.movie.score.toFixed(1)
 						this.movie = res.data.movie
+						// console.log(this.movie.relatedPic)
 					}
 				})
+			},
+			// 预览剧照图片
+			preImg(index) {
+				uni.previewImage({
+					// 剧照数组
+					urls: this.movie.relatedPic,
+					current: index
+				})
+
+
 			}
-			
-			
+
+
 		}
 	}
 </script>
