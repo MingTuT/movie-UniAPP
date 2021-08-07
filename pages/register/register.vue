@@ -49,7 +49,7 @@
 		},
 		methods: {
 			register(e) {
-				if(this.emailFlag && this.pwdFlag && this.pwdFlag2) {
+				if (this.emailFlag && this.pwdFlag && this.pwdFlag2) {
 					let email = e.detail.value.email
 					let password = e.detail.value.password
 					uni.request({
@@ -60,22 +60,29 @@
 							password
 						},
 						success: (res) => {
-							let user = res.data.user
-							uni.setStorageSync('user', user);
-							// console.log(uni.getStorageSync('user'))
-							uni.switchTab({
-							    url: '/pages/me/me'
-							});
+							if (res.data.msg_code) {
+								uni.showToast({
+									title: '该邮箱已被注册',
+									duration: 2000,
+									icon: "none"
+								});
+							} else {
+								let user = res.data.user
+								uni.setStorageSync('user', user);
+								uni.switchTab({
+									url: '/pages/me/me'
+								});
+							}
 						}
 					})
-				}else {
+				} else {
 					uni.showToast({
-					    title: '注册信息有误',
-					    duration: 2000,
+						title: '注册信息有误',
+						duration: 2000,
 						icon: "none"
 					});
 				}
-				
+
 			},
 			checkEmail(e) {
 				let email = e.target.value

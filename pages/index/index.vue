@@ -20,7 +20,7 @@
 					<view v-for="(item, index) in hotList" :key="item._id" class="popular-item">
 						<navigator :url="'../detail/detail?id='+item.movieId">
 							<image class="poster" :src="item.posterPath" mode=""></image>
-							<text class="movie-name">{{item.movieName}}</text>
+							<view class="movie-name">{{item.movieName}}</view>
 							<trailler-stars :showNum=1 :score="item.score" />
 						</navigator>
 					</view>

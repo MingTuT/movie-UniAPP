@@ -19,6 +19,7 @@
 
 #detail {
 	color: #FFFFFF;
+	background: -webkit-gradient(linear, left top, right bottom, from(#e66465), to(#9198e5));
 	background: -webkit-linear-gradient(top left, #e66465, #9198e5);
 	background: linear-gradient(to bottom right, #e66465, #9198e5);
 	height: 100%;
@@ -37,7 +38,8 @@
 	width: 200rpx;
 	height: 270rpx;
 	border-radius: 15rpx;
-	box-shadow: 10rpx 10rpx 30rpx #000;
+	-webkit-box-shadow: 10rpx 10rpx 30rpx #000;
+	        box-shadow: 10rpx 10rpx 30rpx #000;
 }
 .info-right {
 	margin-left: 60rpx;

@@ -45,7 +45,7 @@
 						},
 						success: (res) => {
 							let msg_code = res.data.msg_code
-							if(msg_code) {
+							if(msg_code == 'ok') {
 								uni.setStorageSync('user', res.data.user);
 								uni.switchTab({
 								    url: '/pages/me/me'

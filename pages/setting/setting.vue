@@ -93,7 +93,6 @@
 							'signature': signature
 						},
 						success: function (res) {
-							// console.log(typeof res.data)
 							let data = JSON.parse(res.data)
 							uni.setStorageSync('user', data.user);
 							uni.switchTab({

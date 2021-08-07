@@ -2,6 +2,7 @@ page {
 	background: rgb(245,246,250);
 }
 .bg {
+	background: -webkit-gradient(linear, left top, right top, from(rgba(229, 80, 50, 1)), to(rgba(225, 120, 67, 1)));
 	background: -webkit-linear-gradient(left, rgba(229, 80, 50, 1), rgba(225, 120, 67, 1));
 	background: linear-gradient(to right, rgba(229, 80, 50, 1), rgba(225, 120, 67, 1));
 	height: 350rpx;
@@ -56,6 +57,7 @@ page {
 .reg-form button {
 	width: 50%;
 	color: #FFFFFF;
+	background: -webkit-gradient(linear, left top, right top, from(rgba(229, 80, 50, 1)), to(rgba(225, 120, 67, 1)));
 	background: -webkit-linear-gradient(left, rgba(229, 80, 50, 1), rgba(225, 120, 67, 1));
 	background: linear-gradient(to right, rgba(229, 80, 50, 1), rgba(225, 120, 67, 1));
 	margin-top: 50rpx;

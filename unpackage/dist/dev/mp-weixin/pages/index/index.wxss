@@ -167,12 +167,14 @@
 	width: 95%;
 	height: 500rpx;
 	margin-top: 20rpx;
+	background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(58, 188, 190, 1)), to(#9198e5));
 	background-image: -webkit-linear-gradient(top left, rgba(58, 188, 190, 1), #9198e5);
 	background-image: linear-gradient(to bottom right, rgba(58, 188, 190, 1), #9198e5);
 	-webkit-align-self: center;
 	        align-self: center;
 	border-radius: 30rpx;
-	box-shadow: 10px 10px 20px #888888;
+	-webkit-box-shadow: 10px 10px 20px #888888;
+	        box-shadow: 10px 10px 20px #888888;
 }
 .high-bd {
 	font-size: 18px;
